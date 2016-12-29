@@ -274,3 +274,7 @@ int main() {
 	return 0;
 }
 ```
+
+## 2.3 : Conclusion
+
+_In this chapter, we learned how to make state machines behaves in a dynamic way by creating "EVENTS" and "EVENT_HANDLERS"._
