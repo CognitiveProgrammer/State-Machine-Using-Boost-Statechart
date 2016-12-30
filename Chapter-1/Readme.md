@@ -1,4 +1,4 @@
-# Chapter - 1 : Creating Basic Statemachiane using Boost::Startchart Library 
+# Chapter - 1 : Creating Basic Statemachiane using Boost::Startchart Library
 
 ## 1.1  What are StateMachines?
 
@@ -29,6 +29,7 @@ _Before using boost::statechart, we need to downloal and install boost library f
 #include <boost/statechart/event.hpp>
 #include <boost/statechart/state_machine.hpp>
 #include <boost/statechart/simple_state.hpp>
+#include <boost/statechart/transition.hpp>
 #include <boost/statechart/custom_reaction.hpp>
 
 ```
@@ -158,4 +159,3 @@ int main() {
 ## 1.3 : Conclusion
 
 _In this chapter we learned about creating state machine with starting states and running the state machines.
-

@@ -19,7 +19,7 @@ __This eBook is a work in progress as of now__
 * [Preface](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Preface)
 * [Chapter - 1: Creating Basic State Machine using boost::statechart](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-1)
 * [Chapter - 2: Creating Events and Event Handlers](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-2)
-* [Chapter - 3: Construction and Destruction of States](TBD)
+* [Chapter - 3: The life cycle of a STATE](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-3)
 * [Chapter - 4: Working with Multiple States](TBD)
 * [Chapter - 5: TBD]()
 * [Chapter - 6: TBD]()
@@ -30,7 +30,7 @@ __This eBook is a work in progress as of now__
 
 The materials herein are all (c) 2016 by www.9lean.com.
 
-## License 
+## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
 
