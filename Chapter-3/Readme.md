@@ -101,3 +101,6 @@ sm->process_event(event_MoveToSecond());
 sm->process_event(event_MoveToFirst());
 return 0;
 ```
+## 3.4 Conclusion
+
+_In this chapter, we've learnt about the life cycle of states in a state machine as well as about dynamically creating state machine instances using smart pointers._
