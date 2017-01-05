@@ -16,6 +16,6 @@ The official tutorial is good enough in itself. Nevertheless, I did felt the abs
 
 The intention of writing this mini eBook is to have a handy guide for anyone exploring or writing code using boost statechart library.
 
-I've tried to most of the API(s) and scenarios of creating a descent state machine. I've deliberately spent more space in coding examples than textual explanations.
+I've tried to cover most of the API(s) and scenarios for creating a descent state machine. I've deliberately spent more space in coding examples than textual explanations with the hope that these will help you to understand things better. 
 
-All code written here are compilable and works with most of compilers. I've tested the code in Linux, Windows & MacOS.
+All code written here are compilable and works with most of the recebt C++ compilers including g++, Clang & Windowsn. I've also run and tested the code in Linux, Windows & MacOS.
