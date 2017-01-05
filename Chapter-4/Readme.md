@@ -228,3 +228,6 @@ int main() {
 }
 
 ```
+## 4.3 Conclusion
+_In this chapter, we learned how to create a_ __Meta State__ _which can have multiple inner states with its own event handlers. We have also seen that states can move from innter state to outer state ane vice versa in response to an event._
+
