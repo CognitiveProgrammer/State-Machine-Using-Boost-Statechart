@@ -1,4 +1,4 @@
-# Chapter - 5 : Deffering Events
+# Chapter - 5 : Deferred Events
 
 _In the state machine code till now, we saw that the events has to be handled by the state which is receiving the event. In cases where the state is not listening to the event, the event(s) will simply gets lost_.
 
