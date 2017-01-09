@@ -21,7 +21,7 @@ __This eBook is a work in progress as of now__
 * [Chapter - 2: Creating Events and Event Handlers](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-2)
 * [Chapter - 3: The life cycle of a STATE](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-3)
 * [Chapter - 4: Working with Meta States](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-4)
-* [Chapter - 5: Deferred Event]((https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-5)
+* [Chapter - 5: Deferred Event](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-5)
 * [Chapter - 6: TBD]
 * [Chapter - 7: TBD]
 
