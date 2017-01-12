@@ -18,4 +18,4 @@ The intention of writing this mini eBook is to have a handy guide for anyone exp
 
 I've tried to cover most of the API(s) and scenarios for creating a descent state machine. I've deliberately spent more space in coding examples than textual explanations with the hope that these will help you to understand things better. 
 
-All code written here are compilable and works with most of the recebt C++ compilers including g++, Clang & Windowsn. I've also run and tested the code in Linux, Windows & MacOS.
+All code written here are compilable and works with most of the recent C++ compilers including g++, Clang & Windows. I've also tested the code by running the same in Linux, Windows & MacOS.
