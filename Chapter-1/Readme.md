@@ -160,4 +160,4 @@ int main() {
 
 ## 1.3 : Conclusion
 
-_In this chapter we learned about creating state machine with starting states and running the state machines.
+_In this chapter, we learned about creating state machine with starting states and how to start the state machine_.
