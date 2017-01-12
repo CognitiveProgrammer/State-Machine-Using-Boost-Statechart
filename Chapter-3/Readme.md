@@ -4,23 +4,21 @@ _A state is a functional unit of a state machine, so it makes sense to devote a 
 
 ##  3.1 Construction of a State
 
-_A STATE comes to life under following conditions
+_A STATE comes to life under following conditions_
 
-- When its start with the State Machine i.e. its the starting state
-or
-- When State Machine transit to a state from another state._
+- When its start with the State Machine i.e. its the starting state  OR
+- When State Machine transit to a state from another state
 
 ## 3.2 Destruction of a State
 
-_A STATE is destructed under following conditions
+_A STATE is destructed under following conditions_
 
-- When the State Machine is terminated and the STATE was the last active state.
-or
-- When State Machine transit from the current state to any other State._
+- When the State Machine is terminated and the STATE was the last active state OR
+- When State Machine transit from the current state to any other State
 
 ## 3.3 Visualizing the State Life Cycle
 
-_Lets continue wit our earlier example with two States
+_Lets continue with our earlier example with two States
 
 - firstState
 - secondState
@@ -30,7 +28,7 @@ and two events
 - event_MoveToSecond
 - event_MoveToFirst
 
-for visualizing, we'll add prints in the constructors and destructors of the state and also add appropriate automated transitions_
+_For visualizing, we'll add prints in the constructors and destructors of the state and also add appropriate automated transitions_
 
 ```
 struct firstState;
@@ -71,6 +69,8 @@ int main() {
 - _The state_ __firstState__ _is created when the state machine is started and destroyed when the state machine moved to_ __secondState__.
 - _Similarly_ __secondState__ _is created when the state machine is moved to it and destroyed when the state machine move back to_ __firstState__.
 - _The_ __firstState__ _is created again when the state machine is moved to it and destroyed along with state machine._
+
+_So, the life cycle of state is limited to span of time on which the State Machine remains in that state_
 
 ## 3.4 Using Dynamic memory for the State machine
 
