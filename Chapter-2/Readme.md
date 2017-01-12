@@ -20,7 +20,7 @@ _Rest of the code written in chapter - 1 doesn't change. However, we get nothing
 ## 2.2 : Creating EVENT-HANDLERS
 _Event handlers are the places where all actions happens. If you're creating a state machine, its likely that almost 99% or the functionality is written in event handlers._
 
-_boost::statechart provides two way of handling events. One is_ __Automated__, _where the State Machine takes care of functionalities like moving to another state. Another one is_ __Manual__, _where we need to manually do everything including transitioning to another state.
+_boost::statechart provides two way of handling events. One is_ __Automated__, _where the State Machine takes care of functionalities like moving to another state. Another one is_ __Manual__, _where we need to manually do everything including transitioning to another state_.
 
 _While creating a functional statechart, you may end up using_ __Manual__ _event handlers for >95% of time._
 
@@ -30,7 +30,7 @@ _boost::statechart provides a inbuilt functionality called_ __sc::transition__ _
 
 _if the_ __sc::transition__ _mentioned event is received withing the state, it will automatically transit to_ __TARGET-STATE__.
 
-_Though it simple to use, but the syntax is bit weird at first. you need to typedef it with the reactions as_
+_Though it simple to use, but the syntax is bit weird at first. you need to typedef it with the predefined name called_ __reactions__ _as_
 ```
 typedef sc::transition <event_MoveToSecondState, secondState> reactions;
 
@@ -66,7 +66,7 @@ int main() {
 }
 
 ```
-_When we run this code, the statemachine successfully transit to_ __secondState__ _following the event_ __event_MoveToSecondState__. _Now we can also add an event  hander in_ __secondState__ _for handling event_ __event_MoveToFirstState__
+_When we run this code, the statemachine successfully transit to_ __secondState__ _following the event_ __event_MoveToSecondState__. _Now we can also add an event  hander in_ __secondState__ _for handling event_ __event_MoveToFirstState__ _which will move the state machine back to_ __firstState__
 
 ```
 struct firstState;
@@ -122,8 +122,10 @@ struct event_MoveToThirdState : sc::event<event_MoveToThirdState> {};
 struct firstState : sc::simple_state<firstState, statemachine>
 {
 	firstState() { cout << "In State => firstState" << endl; }
-	typedef mpl::list< sc::transition<event_MoveToSecondState, secondState>,
-	sc::transition<event_MoveToThirdState, thirdState> > reactions;
+	typedef mpl::list< 
+		sc::transition<event_MoveToSecondState, secondState>,
+		sc::transition<event_MoveToThirdState, thirdState> 
+	> reactions;
 };
 struct secondState : sc::simple_state<secondState, statemachine>
 {
@@ -160,6 +162,7 @@ struct firstState : sc::simple_state<firstState, statemachine>
 {
 	firstState() { cout << "In State => firstState" << endl; }
 	typedef sc::custom_reaction<event_MoveToSecondState> reactions;
+	// The custom event handler
 	sc::result react(const event_MoveToSecondState &event) {
 		return transit<secondState>();
 	}
@@ -206,7 +209,8 @@ struct firstState : sc::simple_state<firstState, statemachine>
 	firstState() { cout << "In State => firstState" << endl; }
 	typedef mpl::list <
 		sc::custom_reaction<event_MoveToSecondState>,
-		sc::custom_reaction<event_MoveToThirdState>> reactions;
+		sc::custom_reaction<event_MoveToThirdState>
+	> reactions;
 
 	sc::result react(const event_MoveToSecondState &event) {
 		return transit<secondState>();
@@ -252,7 +256,8 @@ struct firstState : sc::simple_state<firstState, statemachine>
 	firstState() { cout << "In State => firstState" << endl; }
 	typedef mpl::list <
 		sc::transition<event_MoveToSecondState, secondState>,
-		sc::custom_reaction<event_MoveToThirdState>> reactions;
+		sc::custom_reaction<event_MoveToThirdState>
+	> reactions;
 
 	sc::result react(const event_MoveToThirdState &event) {
 		return transit<thirdState>();
@@ -277,4 +282,4 @@ int main() {
 
 ## 2.3 : Conclusion
 
-_In this chapter, we learned how to make state machines behaves in a dynamic way by creating "EVENTS" and "EVENT_HANDLERS"._
+_In this chapter, we learned how states can do some actions and activities based on "EVENTS" and how to create "EVENT_HANDLERS"._
