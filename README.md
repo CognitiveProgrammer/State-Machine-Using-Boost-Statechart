@@ -1,5 +1,7 @@
 # Creating State Machines Using Boost::statechart Framework (Mini eBook)
 
+![alt tag](https://github.com/9lean/State-Machine-Using-Boost-Statechart/blob/master/StateMachine.png)
+
 This mini eBook provides a step by step guide on using Boost::statechart (part of boost C++ library @ www.boost.org) for creating state machines based software.
 
 A large amount of code can potentially be written in the form of state machines. Sometimes even basic switch-case statements are representation of miniature states. Many a times programmers create multiple states in the code without being explicitly aware of the fact that they are trying to emulate state machines.
