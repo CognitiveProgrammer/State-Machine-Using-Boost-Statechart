@@ -1,13 +1,13 @@
 # Chapter - 3 : The life cycle of a STATE
 
-_A state is a functional unit of a state machine, so it makes sense to devote a chapter on life cycle of a state in a state machine for better understanding. A state in a state machine is constructed and deleted multiple times_
+_A_ __state__ _is a functional unit of a_ __state machine__, _so it makes sense to devote a chapter on life cycle of a state in a state machine for better understanding. A state in a state machine is constructed and deleted multiple times_
 
 ##  3.1 Construction of a State
 
 _A STATE comes to life under following conditions_
 
 - When its start with the State Machine i.e. its the starting state  OR
-- When State Machine transit to a state from another state
+- When State Machine transit to the state from another state
 
 ## 3.2 Destruction of a State
 
