@@ -81,7 +81,7 @@ _______________________________________________
 ```
 _Since in firstState, the event_ __event_OutOfBlueEvent__ _is deferred, it will remain in the event queue when firstState exits and the state machine moves to secondState_.
 
-_The_ __secondState__ _picks up the event from the event queue and execute the event
+_The_ __secondState__ _picks up the event from the event queue and execute the event_
 
 ## 4.2  Deferring Multiple events
 
@@ -164,7 +164,7 @@ _The statement sounds complicated but will make more sense with upcoming example
 
 ### 4.2.1 : Adding a thirdState
 
-_In the example above, if we handle only event_ __event_OutOfBlueEvent__ _in_ __secondState__ _then what will happen to the event_ __event_OutOfGreenEvent__ _which we deffered in firstState. Furthermore, if we move to a_ __thirdState__ _as a result of event_ __event_OutOfBlueEvent__, _then the deffered state will persist for_ __thirdState__
+_In the example above, if we handle only event_ __event_OutOfBlueEvent__ _in_ __secondState__ _then what will happen to the event_ __event_OutOfGreenEvent__ _which was_ __deffered__ _in firstState. Furthermore, if we move to a_ __thirdState__ _as a result of event_ __event_OutOfBlueEvent__, _then the deffered state will persist for_ __thirdState__
 
 _Lets add a_ __thirdState__ _and a handler for event_ __event_OutOfGreenEvent__
 
