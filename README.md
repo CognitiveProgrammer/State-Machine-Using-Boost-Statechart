@@ -14,6 +14,11 @@ Boost::statechart is a generic state machine which fulfils most of the basic req
 
 __This eBook is a work in progress as of now__
 
+__How to use this eBook ?__
+
+This eBook recommends to follow __"Chapter a Day"__ method. Each chapter is small enough to be digested in a day with sufficient practice.
+
+
 ## eBook
 
 [Table of Contents]()
