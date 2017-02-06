@@ -68,6 +68,6 @@ _The same behaviour can be repetative, if we trigger the event more than once us
 
 __forward_event()__ _also provides us the flexibility of chosing, which all events are allowed to be propagate to outer state and which are not_
 
-## 6.1 : Conclusion
+## 6.2 : Conclusion
 
 _In this chapter, we learnt how to forward the events from inner state to outer state selectively. We also know from the code that the same event could be handled twice, once in_ __Inner State__ _and then inside_ __Outer State__
