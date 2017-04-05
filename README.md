@@ -32,7 +32,7 @@ This eBook recommends to follow __"Chapter a Day"__ method. Each chapter is smal
 * [Chapter - 6: Forwarding Events](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-6)
 * [Chapter - 7: Error Handling](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-7)
 * [Chapter - 8: Orthogonal States](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-8)
-* [Chapter - 9: State Machine Contexts (TBD)]
+* [Chapter - 9: State Machine Contexts](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-9)
 
 
 ## Copyright
