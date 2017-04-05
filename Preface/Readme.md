@@ -4,7 +4,7 @@
 
 If you're reading this preface, you must be having few question in your mind. The most probable question would be _"What the hell is this mini eBook and that too on a very small and specific topic?"_
 
-Well, the question is valid and I'll try to justify on my position to write mini eBooks on small topics of considerable importance (in my honest opinion).
+Well, the question is valid and I'll try to justify my position on writing mini eBook(s) on small topics of considerable importance (in my honest opinion).
 
 The boost library (www.boost.org) is one of the best C++ library available as of today. Its not only the best, but is a mammoth collection of helper functions for all weather problems.
 
