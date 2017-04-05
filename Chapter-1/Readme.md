@@ -36,7 +36,7 @@ _Before using boost::statechart, we need to downloal and install boost library f
 _All functionalities of boost::statechart resides in a namespaces called boost::statechart. since we'll be using it quiet number of times, we'll shorten the namespace via following code._
 
 ```
-namespaces sc = boost::statechart;
+namespace sc = boost::statechart;
 
 ```
 ### 1.2.2 : Create a Boost State Machine
