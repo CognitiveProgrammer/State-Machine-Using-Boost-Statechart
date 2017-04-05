@@ -36,7 +36,7 @@ struct statemachine : sc::state_machine<statemachine, firstState> {};
 _Now, the create Meta State, we need to also specify the starting state of the_ __firstState__. _This is done by providing a 3rd parameter while creating the state._
 
 ```
-struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {}
+struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {};
 
 ```
 _In the code above, the_ __firstState_Inner_1__ _becomes the starting state of Meta State_ __firstState__.
@@ -144,7 +144,7 @@ int main() {
 }
 
 ```
-_The output of this program will just be_ __Discarded__ _no event transition takes place as a result of the event handling at_ __firstState__.
+_This program will result in_ __Discarded__ _event as no event transition takes place as a result of the event handling at_ __firstState__.
 
 _Nevertheless, its still possible to transit to any other Inner state from the Meta State. In the code above, if we transit the state to_ __firstState_Inner_2__ _as a result of handling event_ __event_Inner1_Inner2__ _inside Meta State, then the overall result would be the same. Here is the code_
 ```
