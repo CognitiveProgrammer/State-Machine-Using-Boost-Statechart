@@ -10,7 +10,7 @@ The boost library (www.boost.org) is one of the best C++ library available as of
 
 Many new additions in the C++11 onwards are taken directly from the boost library (e.g Smart Pointers)
 
-Boost has its own library documentation and boost::startchart is no exception. The official tutorial is present [here](http://www.boost.org/doc/libs/1_63_0/libs/statechart/doc/tutorial.html)
+Boost has its own library documentation and boost::statechart is no exception. The official tutorial is present [here](http://www.boost.org/doc/libs/1_63_0/libs/statechart/doc/tutorial.html)
 
 The official tutorial is good enough in itself. Nevertheless, I did felt the absence of something simpler which I'm trying to create as part of this mini eBook.
 
