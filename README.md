@@ -1,4 +1,4 @@
-# Creating State Machines Using Boost::statechart Framework (Mini eBook)
+# Creating C++ State Machine(s) Using Boost::statechart Library (Mini eBook)
 
 ![alt tag](https://github.com/9lean/State-Machine-Using-Boost-Statechart/blob/master/StateMachine.png)
 
