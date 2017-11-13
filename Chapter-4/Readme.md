@@ -2,20 +2,20 @@
 
 _A functional state machine mainly consists of_ __Meta States__. _A Meta State is a State with multiple inner state. The State can itself act as a mini state machine._
 
-_Meta States are fundamental to state machine design. In a real state machine, meta states are more common than in educational / learning state machines._
+_Meta States are fundamental to state machine design. In a real state machine, meta states are more common than in education / learning state machines._
 
-_For example, if a e-commerce website_ __shopping cart__ _is a state, then every time an item it added, or removed, or updated in quantity, will lead to a different state withing the Meta_ __Shopping Cart State__.
+_For example, if a e-commerce website_ __shopping cart__ _is a state, then every time an item it added, or removed, or updated in quantity, will lead to a different state within the Meta_ __Shopping Cart State__.
 
 
 ## 4.1  Defining Meta States
 
-_From the perspective of_ __boost::statechart__ _library, there is no functional different between a_ __Simple State__ _and a_ __Meta State__. _Both behaves in a similar manner and shall be capable of handling Automated and Manual events._
+_From the perspective of_ __boost::statechart__ _library, there is no functional difference between a_ __Simple State__ _and a_ __Meta State__. _Both behave in a similar manner and shall be capable of handling Automated and Manual events._
 
 _Just like state machines, which needs to know the first state of the state machine, a Meta State also needs to know the first state of that meta state._
 
 _We do specify this while creating the Meta State_.
 
-_Lets see an example where we'll be creating_ __3 Inner States__ of a Meta State_ __firstState__.
+_Let's see an example where we'll be creating_ __3 Inner States__ of a Meta State_ __firstState__.
 
 ```
 struct firstState; // The Meta State
@@ -48,11 +48,11 @@ struct firstState_Inner_1 : sc::simple_state<firstState_Inner_1, firstState> {
 	firstState_Inner_1() { cout << "In State => firstState_Inner_1" << endl; }
 };
 ```
-_The only difference between a normal state and the meta state is that the normal state takes_ __statemachine__ _as 2nd template parameter while meta state takes_ __Meta State__ _as 2nd template parameter. The stetemachine code once stated will be in in_ __firstState_Inner_1__.
+_The only difference between a normal state and the meta state is that the normal state takes_ __statemachine__ _as a 2nd template parameter while meta state takes_ __Meta State__ _as 2nd template parameter. The stetemachine code once stated will be in in_ __firstState_Inner_1__.
 
 ## 4.2  State Transition inside Meta States
 
-_The state transition within Meta States works in exactly similar manner as its done for outer states. Lets create an example with 3 inner states and the corresponding events to move inner states from one state to another state_.
+_The state transition within Meta States works in exactly similar manner as its done for outer states. Let's create an example with 3 inner states and the corresponding events to move inner states from one state to another state_.
 
 ```
 struct firstState; // The Meta State
@@ -102,7 +102,7 @@ int main() {
 }
 
 ```
-_In this example, the Meta state moved from Inner State => 1 -> Inner State => 2 -> Inner State => 3 -> Inner State - 1. From State machine perspective there wasn't any diiference in firing the events._
+_In this example, the Meta state moved from Inner State => 1 -> Inner State => 2 -> Inner State => 3 -> Inner State - 1. From State machine perspective there wasn't any difference in firing the events._
 
 ## 4.2  Handling Events in Meta State
 
@@ -117,7 +117,7 @@ struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_
 
 ```
 
-_The statemachine work in such a way that if the event_ __event_Inner1_Inner2__ _is handled inside the Inner State, it will not be propagated to the Meta State. However, if the event is not handled in the Inner State, it will be propagated to the Meta State to look for a event handling mechanism. In the example below if we remove the event handler from_ __firstState_Inner_1__ _then the event will be handler at_ __firstState__
+_The statemachine work in such a way that if the event_ __event_Inner1_Inner2__ _is handled inside the Inner State, it will not be propagated to the Meta State. However, if the event is not handled in the Inner State, it will be propagated to the Meta State to look for a event handling mechanism. In the example below if we remove the event handler from_ __firstState_Inner_1__ _then the event will be handled at_ __firstState__
 
 ```
 struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {
@@ -144,9 +144,9 @@ int main() {
 }
 
 ```
-_This program will result in_ __Discarded__ _event as no event transition takes place as a result of the event handling at_ __firstState__.
+_This program will result in the_ __Discarded__ _event as no event transition takes place as a result of the event handling at_ __firstState__.
 
-_Nevertheless, its still possible to transit to any other Inner state from the Meta State. In the code above, if we transit the state to_ __firstState_Inner_2__ _as a result of handling event_ __event_Inner1_Inner2__ _inside Meta State, then the overall result would be the same. Here is the code_
+_Nevertheless its still possible to transit to any other Inner state from the Meta State. In the code above, if we transit the state to_ __firstState_Inner_2__ _as a result of handling event_ __event_Inner1_Inner2__ _inside Meta State, then the overall result would be the same. Here is the code_
 ```
 struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {
 	typedef sc::custom_reaction<event_Inner1_Inner2> reactions;
@@ -181,9 +181,9 @@ int main() {
 
 ```
 
-_In this code, since the event_ __event_Inner1_Inner2__ is not handled within_ __firstState_Inner_1__ , _it will be propageted to outer Meta State for handling_.
+_In this code, since the event_ __event_Inner1_Inner2__ is not handled within_ __firstState_Inner_1__ , _it will be propagated to the outer Meta State for handling_.
 
-_Similary, we can transit to another state from inside a Meta State. For example, if we have a state called_ __secondState__, _outside of meta state_ __firstState__, _we can transit to_ __secondState__ _from any one of the inner state_.
+_Similarly, we can transit to another state from inside a Meta State. For example, if we have a state called_ __secondState__, _outside of meta state_ __firstState__, _we can transit to_ __secondState__ _from any one of the inner state_.
 
 ```
 // Outer States
@@ -229,5 +229,5 @@ int main() {
 
 ```
 ## 4.3 Conclusion
-_In this chapter, we learned how to create a_ __Meta State__ _which can have multiple inner states with its own event handlers. We have also seen that states can move from innter state to outer state ane vice versa in response to an event._
+_In this chapter, we learned how to create a_ __Meta State__ _which can have multiple inner states with its own event handlers. We have also seen that states can move from inter state to outer state and vice versa in response to an event._
 
