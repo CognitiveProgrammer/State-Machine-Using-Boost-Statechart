@@ -20,14 +20,14 @@ struct statemachine : sc::state_machine<statemachine, firstState> {
 };
 
 ```
-_Lets also create custom events and event handlers to handle the transiting into second state as well as looking into the state variables_
+_Let's also create custom events and event handlers to handle the transiting into second state as well as looking into the state variables_
 
 ```
 struct event_MoveToSecondState : sc::event<event_MoveToSecondState> {};
 struct event_CheckSMVariable : sc::event<event_CheckSMVariable> {};
 
 ```
-_Finally lets create the event handlers in states to access_ __Statemachine__ _context. In_ __firstState__ _the code will change the value of_ __stateVariable__ _and in_ __secondState__ _the code will verify that the value is indeed incremented._
+_Finally, lets create the event handlers in states to access_ __Statemachine__ _context. In_ __firstState__ _the code will change the value of_ __stateVariable__ _and in_ __secondState__ _the code will verify that the value is indeed incremented._
 
 ```
 struct firstState : sc::simple_state<firstState, statemachine> {
