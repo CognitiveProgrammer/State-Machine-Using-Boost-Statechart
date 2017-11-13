@@ -4,7 +4,7 @@ _To handle situation, where we need to do some cleanup activities,_ __boost::sta
 
 ## 7.1  Using exit() function
 
-_A function with a signature_ __void exit(){...}__ _could be defined for every state. This only thing to remeber is that the function gets called_ __ONLY IF__ _state gets terminated because state machine is moved to another state. This function will not get called, if the state is terminated because state machine itself is terminated_
+_A function with a signature_ __void exit(){...}__ _could be defined for every state. This only thing to remember is that the function gets called_ __ONLY IF__ _state gets terminated because state machine is moved to another state. This function will not get called, if the state is terminated because a state machine itself is terminated_
 
 ```
 // States
@@ -37,16 +37,16 @@ int main() {
 	return 0;
 }
 ```
-_In the above example, the_ __exit()__ _function gets called for_ __firstState__ _and not for_ __secondState__ _because_ __secondState__ _is terminated with state machine._
+_In the above example, the_ __exit()__ _function gets called for_ __firstState__ _and not for_ __secondState__ _because_ __secondState__ _is terminated with the state machine._
 
-__NOTE: The exit() function gets called before destructor, so its perfectly okay to treat exit() as a class memeber function and do thing which is otherwise not recommended in destructors__
+__NOTE: The exit() function gets called before destructor, so it's perfectly okay to treat exit() as a class member function and do the thing(s) which is otherwise not recommended in destructors__
 
 ## 7.2 : exit() functions for Inner States
 
-_There is no difference between behaviour of_ __exit__ _in_ __Inner States__. _it will be called when the state is transitioned from one state to another state._
+_There is no difference between the behaviour of_ __exit__ _in_ __Inner States__. _It will be called when the state is transitioned from one state to another state._
 
 _As with_ __Outer States__, _the_ __exit()__ _functions shall not be called when the state machine is terminated._
 
 ## 7.3 : Conclusion
 
-_In this chapter, we learnt about using the in built error handling mechanism of_ __boost::statechart__
+_In this chapter, we learnt about using the inbuilt error handling mechanism of_ __boost::statechart__
