@@ -1,8 +1,8 @@
 # Chapter - 8 :  The Orthogonal States
 
-Orthogonal states can be considered as a __Meta State__ which can run multiple parallel internal states i.e they can run independent of each other. An orthogonal state is useful when when a state want to have multiple inner states.
+Orthogonal states can be considered as a __Meta State__ which can run multiple parallel internal states, i.e they can run independently of each other. An orthogonal state is useful when when a state want to have multiple inner states.
 
-Just like creating multiple event handlers, the construct __mpl::list__ is used for having multiple inner states.
+Just like creating multiple event handlers, the construct __mpl::list__ is used to create multiple inner states.
 
 ## 8.1 : Creating a Orthogonal States
 
@@ -60,7 +60,7 @@ A __Meta State__ which is created as __Orthogonal State__ is creates __Orthogona
 
 The code above, declares that the state __firstState_Inner_1__ is part of an __Orthogonal Region__ called __<0>__.
 
-To transition from __firstState_Inner_1__ to some another state (for example __TestState_OrthoRegion_0__ ) can happen only if the state is declared as to be part of __Orthogonal Region__ called __<0>__
+To transition from __firstState_Inner_1__ to any other state (for example __TestState_OrthoRegion_0__ ) can happen only if the state is declared as to be part of __Orthogonal Region__ called __<0>__
 
 ```
 // Create Teamp Event
@@ -86,7 +86,7 @@ int main() {
 }
 ```
 
-The code will initiate a transition from __firstState_Inner_1__ to __TestState_OrthoRegion_0__ in orthogonal region __<0>__. Similar state transitions can be written for differnt orthogonal regions.
+The code will initiate a transition from __firstState_Inner_1__ to __TestState_OrthoRegion_0__ in the orthogonal region __<0>__. Similar state transitions can be written for different orthogonal regions.
 
 ## 8.3 : Conclusion
 
