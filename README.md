@@ -37,7 +37,7 @@ This eBook recommends to follow __"Chapter a Day"__ method. Each chapter is smal
 
 ## Copyright
 
-The materials herein are all (c) 2016 by www.9lean.com.
+The materials herein are all (c) 2016 by www.codesbay.com.
 
 ## License
 
