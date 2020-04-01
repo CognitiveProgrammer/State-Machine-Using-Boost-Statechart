@@ -191,7 +191,7 @@ sc::result react(const event_MoveToSecondState &event) {
 
 #### 2.2.2.1 : Creating Multiple Manual EVENT-HANDLERS
 
-_Similar to automated event handlers, we can have multiple manual event handlers using_ __mpl::list__. _We do need to write separate __react__ _functions for each event type. Let's reqrite the 2 event handler, one moves to_ __secondState__ _and other moves to_ __thirdState__.
+_Similar to automated event handlers, we can have multiple manual event handlers using_ __mpl::list__. _We do need to write separate_ __react__ _functions for each event type. Let's reqrite the 2 event handler, one moves to_ __secondState__ _and other moves to_ __thirdState__.
 
 ```
 
