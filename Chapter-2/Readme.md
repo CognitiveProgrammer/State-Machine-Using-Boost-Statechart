@@ -148,7 +148,7 @@ int main() {
 
 ### 2.2.2 : Creating Manual EVENT-HANDLERS
 
-_Manual "EVENT-HANDLERS" are the places where the real code for the statemachine will be written by developers._ __Boost::statechart__ _provides a framework to write custom event handlers. Custom events are declared using_ __sc::customer_Reaction__ _and these custom handler functions are named as_ __react__ _and will always return_ __sc::result__. _It takes the const Event reference as a parameter. The signature of the react function is fixed and can't be changed. Let's convert the above example to transiting the class using custom handlers._
+_Manual "EVENT-HANDLERS" are the places where the real code for the statemachine will be written by developers._ __Boost::statechart__ _provides a framework to write custom event handlers. Custom events are declared using_ __sc::custom_reaction__ _and these custom handler functions are named as_ __react__ _and will always return_ __sc::result__. _It takes the const Event reference as a parameter. The signature of the react function is fixed and can't be changed. Let's convert the above example to transiting the class using custom handlers._
 
 ```
 struct firstState;
