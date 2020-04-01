@@ -33,7 +33,7 @@ _As earlier, we need to specify the starting state while creating the state mach
 struct statemachine : sc::state_machine<statemachine, firstState> {};
 
 ```
-_Now, the create Meta State, we need to also specify the starting state of the_ __firstState__. _This is done by providing a 3rd parameter while creating the state._
+_Now, to create Meta State, we need to also specify the starting state of the_ __firstState__. _This is done by providing a 3rd parameter while creating the state._
 
 ```
 struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {};
@@ -48,7 +48,7 @@ struct firstState_Inner_1 : sc::simple_state<firstState_Inner_1, firstState> {
 	firstState_Inner_1() { cout << "In State => firstState_Inner_1" << endl; }
 };
 ```
-_The only difference between a normal state and the meta state is that the normal state takes_ __statemachine__ _as a 2nd template parameter while meta state takes_ __Meta State__ _as 2nd template parameter. The stetemachine code once stated will be in in_ __firstState_Inner_1__.
+_The only difference between a normal state and the meta state is that the normal state takes_ __statemachine__ _as a 2nd template parameter while meta state takes_ __Meta State__ _as 2nd template parameter. The statemachine code once started will be in in_ __firstState_Inner_1__.
 
 ## 4.2  State Transition inside Meta States
 
@@ -111,7 +111,7 @@ _In the above example, we handled the event in Inner States of the Meta State. T
 struct firstState : sc::simple_state<firstState, statemachine, firstState_Inner_1> {
 	typedef sc::custom_reaction<event_Inner1_Inner2> reactions;
 	sc::result react(const event_Inner1_Inner2 & event) {
-		return treturn discard_event();;
+		return discard_event();
 	}
 };
 
@@ -229,5 +229,5 @@ int main() {
 
 ```
 ## 4.3 Conclusion
-_In this chapter, we learned how to create a_ __Meta State__ _which can have multiple inner states with its own event handlers. We have also seen that states can move from inter state to outer state and vice versa in response to an event._
+_In this chapter, we learned how to create a_ __Meta State__ _which can have multiple inner states with its own event handlers. We have also seen that states can move from inner state to outer state and vice versa in response to an event._
 
