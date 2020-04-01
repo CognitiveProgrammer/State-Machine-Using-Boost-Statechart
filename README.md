@@ -6,7 +6,7 @@ This mini eBook provides a step by step guide on using Boost::statechart (part o
 
 A large amount of code can potentially be written in the form of state machines. Sometimes even basic switch-case statements are a representation of miniature states. Many a time programmers create multiple states in the code without being explicitly aware of the fact that they are trying to emulate state machines.
 
-__Why should one use exiting state machine framework instead of creating its own?__
+__Why should one use existing state machine framework instead of creating its own?__
 
 Creating a proper state machine require lots of code and should behave as expected in most of the unpredictable scenarios. One may try it out, but it will take a hell lot of development and testing time, which instead could be used for coding the functionality.
 
