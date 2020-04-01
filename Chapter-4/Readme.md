@@ -48,7 +48,7 @@ struct firstState_Inner_1 : sc::simple_state<firstState_Inner_1, firstState> {
 	firstState_Inner_1() { cout << "In State => firstState_Inner_1" << endl; }
 };
 ```
-_The only difference between a normal state and the meta state is that the normal state takes_ __statemachine__ _as a 2nd template parameter while meta state takes_ __Meta State__ _as 2nd template parameter. The stetemachine code once stated will be in in_ __firstState_Inner_1__.
+_The only difference between a normal state and the meta state is that the meta state takes also_ __Inner State__ _as 3nd template parameter. The stetemachine code once stated will be in in_ __firstState_Inner_1__.
 
 ## 4.2  State Transition inside Meta States
 
