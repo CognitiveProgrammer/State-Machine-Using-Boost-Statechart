@@ -164,7 +164,7 @@ _The statement sounds complicated, but will make more sense with upcoming exampl
 
 ### 5.3.1 : Adding a thirdState
 
-_In the example above, if we handle only event_ __event_OutOfBlueEvent__ _in_ __secondState__ _then what will happen to the event_ __event_OutOfGreenEvent__ _which was_ __deferred__ _in firstState. Furthermore, if we move to a_ __thirdState__ _as a result of event_ __event_OutOfBlueEvent__, _then the deferred state will persist for_ __thirdState__
+_In the example above, if we handle only event_ __event_OutOfBlueEvent__ _in_ __secondState__ _then what will happen to the event_ __event_OutOfGreenEvent__ _which was_ __deferred__ _in firstState. Furthermore, if we move to a_ __thirdState__ _as a result of event_ __event_OutOfBlueEvent__, _then the deferred event will persist for_ __thirdState__
 
 _Lets add a_ __thirdState__ _and a handler for event_ __event_OutOfGreenEvent__
 
