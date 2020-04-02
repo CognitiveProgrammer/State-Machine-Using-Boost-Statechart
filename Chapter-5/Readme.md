@@ -187,9 +187,9 @@ _______________________________________________
 |             event_OutOfGreenEvent           |  
 -----------------------------------------------
 ```
-_At_ __thirdState__, _the event_ __event_OutOfGreenEvent__ _is handled as it was maintained in the deferred queue.
+_At_ __thirdState__, _the event_ __event_OutOfGreenEvent__ _is handled as it was maintained in the deferred queue_.
 
-Unfortunately, things get changed if we change the sequence of posting events. if we post_ __event_OutOfGreenEvent__ _before_ __event_OutOfBlueEvent__ _then_ __event_OutOfGreenEvent__ _remains unhandled_
+_Unfortunately, things get changed if we change the sequence of posting events. If we post_ __event_OutOfGreenEvent__ _before_ __event_OutOfBlueEvent__ _then_ __event_OutOfGreenEvent__ _remains unhandled_
 
 _Let's see how event queues  plays a role in it. First, we'll amend the sequence of posting events_
 

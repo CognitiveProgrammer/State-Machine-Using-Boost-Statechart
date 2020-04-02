@@ -2,9 +2,9 @@
 
 _As we saw in_ __[chapter - 4 : Working with Meta States](https://github.com/9lean/State-Machine-Using-Boost-Statechart/tree/master/Chapter-4)__, _if an event is  unhandled in_ __Inner State__, _it gets automatically propagated to_ __Outer State__. _Which means all unhandled states can be handled in_ __Outer State__.
 
-_This is good unless we come to a situation where we want only certain events to be propagated to_ __Outer State__ _because we want to do something as part of this event handling in_ __Inner State__ _as well as in__ __Outer state__
+_This is good unless we come to a situation where we want only certain events to be propagated to_ __Outer State__ _because we want to do something as part of this event handling in_ __Inner State__ _as well as in_ __Outer state__
 
-_We can use_ __forward_even()__ _for these situations
+_We can use_ __forward_even()__ _for these situations_
 
 
 ## 6.1  Using forward_event
