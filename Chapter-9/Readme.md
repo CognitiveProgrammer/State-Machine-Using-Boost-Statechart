@@ -56,5 +56,5 @@ int main() {
 }
 ```
 
-- NOTE : _The context<>() can't be used inside the constructor / destructors of the state_ 
+- NOTE : _The context<>() and some other functions can't be used inside the constructor of the state derived from the simple_state<> template. If an entry action needs to access the "outside world", the state must derive from state<> instead and must implement appropriate forwarding constructor_. 
 
